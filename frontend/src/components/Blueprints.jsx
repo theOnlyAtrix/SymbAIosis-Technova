@@ -13,7 +13,7 @@ export default function Blueprints({ currentCompany, targetCompany, onClose }) {
 
         const generateBlueprint = async () => {
             try {
-                const res = await fetch("http://localhost:5000/generateBlueprint", {
+                const res = await fetch("https://symbaiosis-technova.onrender.com/api/generateBlueprint", {
                     method: "POST",
                     headers: { "Content-Type": "application/json" },
                     body: JSON.stringify({
